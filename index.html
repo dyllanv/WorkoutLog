@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+<head>
+	<title>Workout Log</title>
+</head>
+<body>
+	<h1>Add Exercise</h1>
+<table>
+    <thead>
+        <tr>
+            <th type="hidden">
+            <th>Name
+            <th>Reps
+            <th>Weight
+            <th>Unit
+            <th>Date
+    <tbody>
+        <form>
+            <td><input type="hidden" id="id">
+            <td><input type="text" id="name">
+            <td><input type="number" id="reps">
+            <td><input type="number" id="weight">
+            <td>lbs<input type="radio" name="unit" id="lbs">kgs<input type="radio" name="unit" id="kgs">
+            <td><input type="date" id="date">
+            <td><input type="submit" id="add">
+        </form>
+</table>
+
+<h1>My Workout Log:</h1>
+<table id="workoutsTable">
+    <thead>
+        <tr>
+            <td><input type="hidden" value="ID">
+            <th>Name
+            <th>Reps
+            <th>Weight
+            <th>Unit
+            <th>Date
+            <th>Update
+            <th>Delete
+</table>
+
+	<script src="index.js"></script>
+</body>
+</html>
